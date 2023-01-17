@@ -1,0 +1,169 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8"><!-- -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            하이~
+        </title> 
+        <link href="CSS/mainStyle.css" rel="stylesheet">
+    </head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+    </style>
+    </head>
+    <include></include>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <body>
+        <div data-include-path="header.html"></div>
+        
+        <div class="windowAll"> <!--화면 전체 영역-->
+            <div class="pageCenter"> <!-- 메인베너 div -->
+                <div class="c"><!--이미지 감싸는 div-->
+                    <img src="image/zzz.PNG" class="mainBenner">
+                </div>
+            </div>
+
+            <div class="fullpage">
+                <div class="section">
+                    <!-- 메인 1단 -->
+                    <div class="product">
+                        <div class="item">
+                            <div class="new">
+                                <h3>SKILL LIST</h3>
+                            </div>
+                            <div class="wrap"> <!--베너 영역-->
+                                <div class="rolling-list"> <!-- 원본 베너 -->
+                                    <ul>
+                                        <li>
+                                            <!-- <div class="image-warp"><img src="image/CSS.png" style="width: 10%; height: 100%;"></div>-->
+                                            <div class="image-wrap"><img src="image/CSS.png"></div>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrap"><img src="image/HTML.png"></div>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrap"><img src="image/JS.png"></div>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrap"><img src="image/FIGMA.png"></div>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrap"><img src="image/Notion.png"></div>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrap"><img src="image/JQUARY.png"></div>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrap"><img src="image/JAVA.png"></div>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrap"><img src="image/mariaDB.png"></div>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrap" ><img src="image/Oracle.png"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="subBenner">
+                        <div class="new">
+                            <h3>CAREER</h3>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="newList2">
+                                <div>
+                                    <video autoplay loop src="/image/zzzz.mov"
+                                        style="width: 34%;
+                                        height: 100%;">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="scrollToTop" ></a>
+
+        <div data-include-path="footer.html"></div>
+
+        <script>
+            // 롤링 배너 복제본 생성
+            let roller = document.querySelector('.rolling-list');
+            roller.id = 'roller1'; // 아이디 부여
+
+            let clone = roller.cloneNode(true)
+            // cloneNode : 노드 복제. 기본값은 false. 자식 노드까지 복제를 원하면 true 사용
+            clone.id = 'roller2';
+            document.querySelector('.wrap').appendChild(clone); // wrap 하위 자식으로 부착
+
+            document.querySelector('#roller1').style.left = '0px';
+            document.querySelector('#roller2').style.left = document.querySelector('.rolling-list ul').offsetWidth + 'px';
+            // offsetWidth : 요소의 크기 확인(margin을 제외한 padding값, border값까지 계산한 값)
+
+            roller.classList.add('original');
+            clone.classList.add('clone');
+        </script>
+
+        <script>     
+            window.addEventListener('load', function() {
+                var allElements = document.getElementsByTagName('*');
+                Array.prototype.forEach.call(allElements, function(el) {
+                    var includePath = el.dataset.includePath;
+                    if (includePath) {
+                        var xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function () {
+                            if (this.readyState == 4 && this.status == 200) {
+                                el.outerHTML = this.responseText;
+                            }
+                        };
+                        xhttp.open('GET', includePath, true);
+                        xhttp.send();
+                    }
+                });
+            });
+        </script>
+
+        <script>
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollToTop').fadeIn();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                }
+            });
+
+            $('.scrollToTop').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+
+            $(document).ready(function(){
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollToTop').fadeIn();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                }
+            });
+            //Click event to scroll to top
+            $('.scrollToTop').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+            
+        });
+        </script>
+        
+
+        
+    </body>
+    </html>

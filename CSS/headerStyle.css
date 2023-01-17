@@ -1,0 +1,95 @@
+#header {
+    background-color: white;
+    overflow: hidden;
+    min-width: 100%;
+    padding-top: 0px;
+    border-top: 12px solid #BB2649;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.container{
+    left: 363px;
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: end;
+    justify-content: space-between;
+}
+.image{
+    width: 180px;
+    display: inline-block;
+    size: 100px 100px;
+}
+.menu{
+    width: calc(100% - 260px);
+    padding-right: 45px;
+}
+.hLink{
+    border-radius: 10px;
+    width: 16%;
+    height: 43px;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    color: black;
+    transition: all 0.5s ease 0s;
+    font-weight: 400;
+    font-family: 'Jua', sans-serif;
+    font-size: 18px;
+}
+
+
+.hLink:hover{
+    background-color: #BB2649;
+    color: white;
+    
+}
+.myPage{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:10px;
+}
+
+.yonghyeon{
+    position: fixed;
+    left: 190px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Jua', sans-serif;
+}
+
+.yonghyeon:hover{
+    color: #BB2649;
+    cursor: pointer;
+}
+
+@media (max-width:767px) {
+    .image {
+        width: 115px;
+    }
+
+    .menu {
+        width: calc(100% - 185px);
+    }
+
+    .hLink {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .myPage img {
+        width: 20px;
+    }
+}
