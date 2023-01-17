@@ -96,10 +96,15 @@
     font-size: 20px;
     text-align: center;
 }
-/* 이미지 배경
-.wrap .rolling-list ul li:nth-child(2) { 
-	background-color: #FFEAB5; 
+.wrap .rolling-list ul li:nth-child(7) { 
+    background-color: #FFEAB5; 
+    width: 175px;
+    font-weight: 400;
+    font-family: 'Jua', sans-serif;
+    font-size: 20px;
+    text-align: center;
 }
+/* 이미지 배경
 .wrap .rolling-list ul li:nth-child(3) { 
 	background-color: #D3E7DC;
 }
