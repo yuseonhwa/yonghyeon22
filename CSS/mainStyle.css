@@ -1,25 +1,19 @@
 .c{
     position: relative;
     width:100%;
-    height:525px;
     overflow:hidden;
     margin:0 auto;
 }
 .pageCenter{
     width: auto;
-    height: 525px;
     margin-top: 110px;
     margin-left: 130px;
     margin-right: 130px;
-    background-color: black;
     position: relative;
 }
 .mainBenner{
     width:100%;
     height:100%;
-    object-fit:cover;
-    position: relative;
-    object-fit: fill;
 }
 .windowAll{
     position: relative;
