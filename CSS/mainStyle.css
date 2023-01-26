@@ -7,8 +7,6 @@
 .pageCenter{
     width: auto;
     margin-top: 110px;
-    margin-left: 130px;
-    margin-right: 130px;
     position: relative;
 }
 .mainBenner{
@@ -31,23 +29,23 @@
     overflow: hidden;
     max-width: 1920px;
 }
-.new{
+.subTitle{
     position: relative;
     text-align: center;
 }
-.new h3{
-    font-size: 32px;
+.subTitle h3{
+    font-size: 2.5rem;
     color: #1a1a1a;
     font-weight: 400;
     font-family: 'Jua', sans-serif;
-    line-height: 32px;
+    /*line-height: 5px;*/
     text-transform: uppercase;
 }
 .wrap{
     display: flex; 
     overflow: hidden;
     /*border : 1px solid salmon;*/
-    background-color: #FFFAFA;
+    background-color: #fcf6e3;
 }
 
 .wrap .rolling-list ul { 
@@ -168,3 +166,79 @@
 	100% { transform: translateX(-200%); }
 }
 
+.aboutMeAll{
+    margin: 60px auto;
+    height: 530px;
+    max-width: 1980px;
+    /*border: 1px solid salmon;*/
+}
+
+.aboutMeCenter{
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    max-width: 50.25rem;
+    padding: 4rem 2rem;
+    margin: -60px auto;
+    margin-right: 13rem;
+}
+
+.aboutMeCenter2{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+}
+
+.aboutImage{
+    width: 2rem;
+    min-width: 2rem;
+    height: 2rem;
+    margin-top: 0.2rem;
+    margin-right: 2rem;
+}
+
+.aboutImage2{
+    width: 100%;
+}
+
+.aboutMeList{
+    width: 33.33333%;
+    margin-bottom: 2rem;
+}
+
+.aboutMeList2{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    max-width: 13rem;
+    margin: 5px auto;
+    opacity: 74.8;
+}
+
+.aboutMiniTitle{
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-family: 'Jua', sans-serif;
+    font-size: 1.5rem;
+}
+
+.aboutMiniTitle-detail{
+    font-weight: 400;
+    font-family: 'Jua', sans-serif;
+    font-size: 1.25rem;
+}
+
+.myPhoto{
+    width: 50px;
+    height: 50px;
+}
+
+.myPhotoBorder{
+    position: absolute;
+    max-width: 1920px;
+    width: 350px;
+    height: 400px;
+    top: 180px;
+    left: 500px;
+    border: 1px solid black;
+}
