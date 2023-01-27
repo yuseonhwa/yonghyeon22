@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    font-family: 'Jua', sans-serif;
+}
+
 #header {
     background-color: #fcf6e3;
     overflow: hidden;
@@ -31,6 +36,7 @@
     width: calc(100% - 260px);
     padding-right: 45px;
 }
+
 .hLink{
     border-radius: 10px;
     width: 16%;
@@ -52,13 +58,15 @@
     color: white;
     
 }
+
+
 .myPage{
     position: absolute;
     top:50%;
     transform: translateY(-50%);
     right:10px;
 }
-
+/*
 .yonghyeon{
     position: fixed;
     left: 190px;
@@ -72,7 +80,7 @@
     color: #BB2649;
     cursor: pointer;
 }
-
+*/
 @media (max-width:767px) {
     .image {
         width: 115px;
@@ -93,10 +101,85 @@
     }
 }
 
-.photoBooth{
-    border: 1px solid pink;
-    width: 530px;
-    height: 370px;
-    top: 106px;
-    position: absolute;
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcf6e3;
+    padding: 13px 30px;
 }
+
+.navBar-logo a{
+    font-size: 30px;
+    margin-left: 130px;
+    font-weight: 400;
+    font-family: 'Jua', sans-serif;
+}
+
+.navBar-logo a:hover{
+    color: #FFE694;
+    cursor: pointer;
+}
+
+.navBar-menu a{
+    display: block;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.navBar-menu{
+    cursor: pointer;
+    text-align: center;
+    width: 35%;
+    display: flex;
+    list-style: none;
+}
+
+.navBar-menu li{
+    border-radius: 10px;
+    width: 110px;
+    height: 35px;
+    display: block;
+    padding: 1px 0px;
+    transition: all 0.5s ease 0s;
+}
+
+.navBar-menu li:hover{
+    display: block;
+    background-color: #FFE694;
+}
+
+
+.navBar-toggleBtn{
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 600px){
+    .navBar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navBar-menu{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navBar-menu{
+        width: 100%;
+        text-align: center;
+    }
+    .navBar-toggleBtn{
+        display: block;
+    }
+    .navBar-menu.active,
+    .navBar-links.active {
+        display: flex;
+    }
+}
+

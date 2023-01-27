@@ -41,6 +41,23 @@
     /*line-height: 5px;*/
     text-transform: uppercase;
 }
+
+.AboutSubTitle{
+    position: relative;
+    text-align: center;
+}
+
+.AboutSubTitle h3{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    font-weight: 400;
+    font-family: 'Jua', sans-serif;
+    /*line-height: 5px;*/
+    text-transform: uppercase;
+}
+
 .wrap{
     display: flex; 
     overflow: hidden;
@@ -167,24 +184,20 @@
 }
 
 .aboutMeAll{
-    margin: 60px auto;
-    height: 530px;
     max-width: 1980px;
-    /*border: 1px solid salmon;*/
 }
 
 .aboutMeCenter{
     -webkit-box-sizing: border-box;
     width: 100%;
-    max-width: 50.25rem;
-    padding: 4rem 2rem;
-    margin: -60px auto;
-    margin-right: 13rem;
+    max-width: 60.25rem;
+    padding: 2rem 2rem;
+    margin: 5px auto;
 }
 
 .aboutMeCenter2{
     display: flex;
-    flex-flow: column;
+    flex-flow: wrap;
     justify-content: space-between;
     -webkit-box-pack: justify;
 }
@@ -234,11 +247,19 @@
 }
 
 .myPhotoBorder{
-    position: absolute;
-    max-width: 1920px;
-    width: 350px;
+    width: 30%;
     height: 400px;
     top: 180px;
     left: 500px;
     border: 1px solid black;
+}
+
+.aboutMeTop{
+    overflow: hidden;
+    max-width: 1920px;
+}
+
+.aboutMeTop2{
+    max-width: 1920px;
+    border: 1px solid salmon;
 }

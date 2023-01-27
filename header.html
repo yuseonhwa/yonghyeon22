@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f754260589.js" crossorigin="anonymous"></script>
     <title>header</title>
     <link href="CSS/headerStyle.css" rel="stylesheet">
 </head>
@@ -11,6 +12,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 </style>
 <body>
+    <!--
     <div class="warp" id="header">
         <div class="container">
             <a onclick="javascript:window.scrollTo(0,0)" class="yonghyeon">YONGHYEON</a> 
@@ -34,13 +36,29 @@
                     지도보기
                 </div>
             </div>
-            <!--
-            <div class="myPage">
-                <img src="image/myPage.png">
-            </div>
-            -->
         </div>
     </div>
+    -->
+    <nav class="navBar">
+        <div class="navBar-logo">
+            <a onclick="javascript:window.scrollTo(0,0)">YONGHYEON</a> 
+        </div>
+        <ul class="navBar-menu">
+            <li><a href="https://www.naver.com">네이버</a></li>
+            <li><a href="https://www.google.com">구글</a></li>
+            <li><a href="https://www.daum.net">다음</a></li>
+            <li><a href="https://www.nike.com/kr">나이키</a></li>
+        </ul>
+        <a href="#" class="navBar-toggleBtn"><i class="fa-duotone fa-bars"></i></a>
+    </nav>
+    <script>
+        const toggleBtn = document.querySelector('.navBar-toggleBtn');
+        const menu = document.querySelector('.navBar-menu');
+
+        toggleBtn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        })
+    </script>
 </body>
 
 </html>
