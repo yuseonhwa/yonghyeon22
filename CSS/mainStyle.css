@@ -191,11 +191,27 @@
     -webkit-box-sizing: border-box;
     width: 100%;
     max-width: 60.25rem;
+    padding: 0rem 2rem;
+    margin: 5px auto;
+}
+
+.aboutMeCenter-top{
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    max-width: 60.25rem;
     padding: 2rem 2rem;
     margin: 5px auto;
 }
 
 .aboutMeCenter2{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+}
+
+.aboutMeCenter2-top{
+    margin-top: 35px;
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
@@ -219,12 +235,26 @@
     margin-bottom: 2rem;
 }
 
+.aboutMeList-top{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
 .aboutMeList2{
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
     max-width: 13rem;
     margin: 5px auto;
+    opacity: 74.8;
+}
+
+.aboutMeList2-top{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    max-width: 30rem;
+    margin: 30px auto;
     opacity: 74.8;
 }
 
@@ -236,6 +266,19 @@
 }
 
 .aboutMiniTitle-detail{
+    font-weight: 400;
+    font-family: 'Jua', sans-serif;
+    font-size: 1.25rem;
+}
+
+.aboutMiniTitle-top{
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-family: 'Jua', sans-serif;
+    font-size: 1.5rem;
+}
+
+.aboutMiniTitle-detail-top{
     font-weight: 400;
     font-family: 'Jua', sans-serif;
     font-size: 1.25rem;
@@ -263,3 +306,58 @@
     max-width: 1920px;
     border: 1px solid salmon;
 }
+
+.myImage{
+    width: 100%;
+    height: 340px;
+}
+
+::-moz-selection {
+    background: lightblue;
+    color: #fff;
+ }
+ ::selection {
+    background: lightblue;
+    color: #fff;
+ }
+
+ .typing{
+    margin: 20px auto;
+    text-align: center;
+ }
+
+ .typing h1{
+    font-size: 20px;
+    min-width:11px;
+    white-space: nowrap;
+    margin: 0;
+    position: absolute;
+    color: transparent;
+    left:50%;
+    transform: translate(-50%, -50%);
+ }
+
+ .typing h1::before{
+    content: "안녕하세요. 사용자 친화적인 서비스를 추구하는 Front-End developer 입니다.";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    overflow: hidden;
+    border-right: 1px solid black;
+    animation: typing 5s steps(31) infinite;
+ }
+
+ @keyframes typing{
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
