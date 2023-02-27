@@ -156,7 +156,7 @@
     height: 45px;
     background-image: url('/image/arrow.png');
     position: fixed;
-    right: 50px;
+    right: 0.5em;
     bottom: 50px;
     display: none;
     border-radius: 2em;
@@ -328,7 +328,7 @@
  }
 
  .typing h1{
-    font-size: 20px;
+    font-size: 1vw;
     min-width:11px;
     white-space: nowrap;
     margin: 0;
@@ -357,7 +357,7 @@
 
  .introduce p{
     line-height: 28px;
-    font-size: 16px;
+    font-size: 1vw;
     letter-spacing: 0.5px;
  }
 
