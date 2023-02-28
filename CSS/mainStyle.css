@@ -34,7 +34,7 @@
     text-align: center;
 }
 .subTitle h3{
-    font-size: 2.5rem;
+    font-size: 2.5em;
     color: #1a1a1a;
     font-weight: 400;
     font-family: 'Jua', sans-serif;
@@ -328,7 +328,7 @@
  }
 
  .typing h1{
-    font-size: 1.3vw;
+    font-size: 1em;
     min-width:11px;
     white-space: nowrap;
     margin: 0;
@@ -370,5 +370,38 @@
     }
     100% {
       width: 0%;
+    }
+  }
+
+  @media all and (max-width:479px) {
+    .aboutMeList2-top{
+        width: 90%;
+    }
+
+    .subTitle h3{
+        font-size: 2em;
+    }
+
+    .AboutSubTitle h3{
+        font-size: 2em;
+    }
+
+    .footer .footer_bottom{
+        padding: 1px 0 1px;
+    }
+
+    .introduce{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .introduce p{
+        line-height: 20px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .typing h1{
+        font-size: 1.3vw;
     }
   }
