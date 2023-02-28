@@ -402,6 +402,7 @@
     }
 
     .typing h1{
-        font-size: 3vw;
+        width: 90%;
+        font-size: 1rem;
     }
   }
