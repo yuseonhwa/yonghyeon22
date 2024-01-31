@@ -111,7 +111,7 @@ body{
 
 .navBar-logo a{
     font-size: 30px;
-    margin: 0px 110px;
+    /*margin: 0px 110px;*/
     font-weight: 400;
     font-family: 'Jua', sans-serif;
 }
@@ -162,7 +162,9 @@ body{
     font-size: 24px;
 }
 
-@media screen and (max-width: 600px){
+
+
+@media screen and (max-width: 1023px){
     .navBar{
         flex-direction: column;
         align-items: flex-start;
@@ -170,9 +172,6 @@ body{
     .navBar-menu{
         flex-direction: column;
         align-items: center;
-        width: 100%;
-    }
-    .navBar-menu{
         width: 100%;
         text-align: center;
     }
